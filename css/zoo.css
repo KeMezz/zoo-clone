@@ -1,0 +1,168 @@
+body {
+  margin: 0 auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: #fff;
+}
+
+header .header___left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 66.6666666666%;
+}
+
+@media (max-width: 1200px) {
+  header .header___left {
+    width: 50%;
+  }
+}
+
+header .header___left .logo {
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: black;
+  margin-right: 6vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 1200px) {
+  header .header___left .logo {
+    font-size: 1.5rem;
+  }
+}
+
+header .header___left nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header .header___left nav a {
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin-right: 50px;
+  color: gray;
+}
+
+@media (max-width: 1200px) {
+  header .header___left nav {
+    display: none;
+  }
+}
+
+header .header___left:hover {
+  background-color: lightgray;
+}
+
+header .header___right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.3333333333%;
+}
+
+@media (max-width: 1200px) {
+  header .header___right {
+    width: 50%;
+  }
+}
+
+header .header___right nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header .header___right nav a {
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin-right: 4vw;
+  color: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 1200px) {
+  header .header___right nav a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header .header___right nav a:nth-child(1) {
+    display: none;
+  }
+}
+
+header .header___right .lang {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+header .header___right:hover {
+  background-color: lightgray;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.333333333333%;
+  -webkit-box-flex: auto;
+      -ms-flex-positive: auto;
+          flex-grow: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 50%;
+  }
+}
+
+.card figure {
+  height: 0;
+  padding-bottom: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.card .card___text {
+  padding: 0.6em;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=zoo.css.map */

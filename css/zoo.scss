@@ -1,0 +1,106 @@
+@import "_mixin";
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #fff;
+    .header___left {
+        display: flex;
+        width: 66.6666666666%;
+        @media (max-width: 1200px) {
+            width: 50%;
+        }
+        .logo {
+            @include headerText;
+            color: black;
+            margin-right: 6vw;
+            align-self: center;
+            @media (max-width: 1200px) {
+                font-size: 1.5rem;
+            }
+        }
+        nav {
+            display: flex;
+            align-self: center;
+            a {
+                @include headerText;
+                margin-right: 50px;
+                color: gray;
+            }
+            @media (max-width: 1200px) {
+                display: none;
+            }
+        }
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+    .header___right {
+        display: flex;
+        width: 33.3333333333%;
+        @media (max-width: 1200px) {
+            width: 50%;
+        }
+        nav {
+            display: flex;
+            align-self: center;
+            a {
+                @include headerText;
+                margin-right: 4vw;
+                color: black;
+                align-self: center;
+                @media (max-width: 1200px) {
+                    font-size: 1.5rem;
+                }
+                @media (max-width: 1200px) {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .lang {
+            position: absolute;
+            top: 25px;
+            right: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.card {
+    display: flex;
+    width: 33.333333333333%;
+    flex-grow: auto;
+    flex-direction: column;
+    @media (max-width: 1200px) {
+        width: 50%;
+    }
+    figure {
+    height: 0;
+    padding-bottom: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    }
+    .card___text {
+        padding: 0.6em;
+        text-transform: uppercase;
+    }
+}
